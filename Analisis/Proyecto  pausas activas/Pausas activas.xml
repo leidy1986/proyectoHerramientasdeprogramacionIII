@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Pausas activas</rem:name>
@@ -17,6 +17,8 @@ xmlns:rem="http://rem.lsi.us.es">
 <rem:comments>
 Ninguno
 </rem:comments>
+	 <rem:preparedFor organizations = "ORG-0002 "/>
+	 <rem:preparedBy organizations = "ORG-0001 "/>
 <rem:section
  oid = "SEC-0011">
 <rem:name>
@@ -335,22 +337,21 @@ Ninguno</rem:comments>
 <rem:graphicFile
  oid = "GRF-0001">
 <rem:name>
-Iniciar</rem:name>
+iniciar</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
 <rem:year>2012</rem:year>
 <rem:month>10</rem:month>
-<rem:day>1</rem:day>
+<rem:day>9</rem:day>
 </rem:date>
 </rem:version>
 <rem:authors stakeholders ="STK-0001 STK-0002 "/>
-<rem:sources stakeholders ="STK-0003 "/>
 <rem:comments>
-imagen tomada de :<br/>Designed by  Unknown Designer    <br/>United States  1982 </rem:comments>
+Ninguno</rem:comments>
 <rem:fileName>
-<![CDATA[..\PAUSAS ACTIVAS.png]]>
+<![CDATA[.\PAUSAS ACTIVAS.png]]>
 </rem:fileName>
 </rem:graphicFile>
 </rem:section>
