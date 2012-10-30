@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files\REM 1.2.2\xml\REM_1_2_2.dtd">
 <rem:requirementsProject
 xmlns:rem="http://rem.lsi.us.es">
 <rem:name>Pausas activas</rem:name>
@@ -207,7 +207,7 @@ Ninguno</rem:comments>
 <rem:authors stakeholders ="STK-0001 STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
-<rem:text> <br/>Este programa nos permitira por medio de ciertas alertas comunicarle al usuario que debe hacer sus pausas activas.<br/><br/>Ademas de esto cada usuario podra evaluar su rendimiento por medio de un porcentaje.</rem:text>
+<rem:text> <br/><br/>Este programa nos permitira por medio de ciertas alertas comunicarle al usuario que debe hacer sus pausas activas, mostrandole una serie de ejercicios que podra realizar. Ademas de esto cada usuario podra evaluar su rendimiento por medio de un porcentaje que se da de acuerdo a los ejercicios que realize.</rem:text>
 </rem:glossaryItem>
 </rem:section>
 <rem:section
@@ -710,6 +710,7 @@ Crear Perfil</rem:name>
 <rem:day>16</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
@@ -772,6 +773,66 @@ presenta un mensaja indicando un error creando el perfil</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Generar calificacion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>10</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+El usuario puede acceder a esta por medio de un boton en cualquier momento</rem:triggeringEvent>
+<rem:precondition>
+se debe de haber creado un perfil</rem:precondition>
+<rem:postcondition>
+</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0008">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+ presenta la opcion de calificar al usario</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0007">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+ elige la opcion calificar</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0010">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra un mensaje con la calificacion de acuerdo a los ejercicios realizados </rem:description>
+</rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
@@ -1013,18 +1074,6 @@ Hour:minutes:seconds</rem:description>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0001">
 <rem:name>PD</rem:name>
 <rem:description>
@@ -1035,6 +1084,18 @@ Hour:minutes:seconds</rem:description>
 <rem:name>Ambigüedad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0005">
