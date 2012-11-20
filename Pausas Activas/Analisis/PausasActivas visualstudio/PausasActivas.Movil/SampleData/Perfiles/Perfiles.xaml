@@ -1,0 +1,12 @@
+﻿<!--
+      *********    NO MODIFIQUE ESTE ARCHIVO     *********
+      Este archivo se regenera mediante una herramienta de diseño.
+       Si realiza cambios en este archivo, puede causar errores.
+-->
+<SampleData:Perfiles xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Perfiles" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:Perfiles.Collection>
+    <SampleData:Item Codigo="1" Nombre="Fácil" Imagen="/PausasActivas.Movil;component/SampleData/Perfiles/Perfiles_Files/1Estrella.png" Descripción="2 minutos cada 3 horas" />
+    <SampleData:Item Codigo="2" Nombre="Medio" Imagen="/PausasActivas.Movil;component/SampleData/Perfiles/Perfiles_Files/2Estrellas.png" Descripción="5 minutos cada 2 horas" />
+    <SampleData:Item Codigo="3" Nombre="Difícil" Imagen="/PausasActivas.Movil;component/SampleData/Perfiles/Perfiles_Files/3Estrellas.png" Descripción="10 minutos cada 1 hora" />
+  </SampleData:Perfiles.Collection>
+</SampleData:Perfiles>
